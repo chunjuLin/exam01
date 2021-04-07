@@ -39,3 +39,7 @@ Last, we have to use the python to get the FFT. Basically, the FFT is similar to
 rate is 100, so we have to make the Fs = 1000. And calculate out the related range of the graph. I make the graph print
 out 1 second in the graph.And I cut the x and y axis in frequency domain.
 
+
+We put all the wave generating and sampling process in a function called wave. When we finish selecting the slew, We will 
+call a thread to start the eventqueue.  The eventqueue will called the wave function to generate the wave and start to sample
+the answer. The result on the screen will use the python to get the correct result
